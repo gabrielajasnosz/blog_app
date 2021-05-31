@@ -12,7 +12,7 @@ const postSchema = new mongoose.Schema({
 });
 postSchema.plugin(uniqueValidator);
 
-const PostModel = mongoose.model('dp_post', postSchema);
+const PostModel = mongoose.model('gj_post', postSchema);
 
 async function query() {
     const result = await PostModel.find({});
